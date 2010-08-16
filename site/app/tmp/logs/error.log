@@ -1,0 +1,3 @@
+2010-08-16 19:16:03 Warning: Warning (2): mysql_connect() [<a href='http://php.net/function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'localhost' (10061) in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 540]
+2010-08-16 19:16:03 Warning: Warning (2): mysql_select_db(): supplied argument is not a valid MySQL-Link resource in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 546]
+2010-08-16 19:16:03 Warning: Warning (2): mysql_get_server_info(): supplied argument is not a valid MySQL-Link resource in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 554]
