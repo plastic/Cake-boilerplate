@@ -1,4 +1,7 @@
 <?php
+# To fast
+#App::import('Lib', 'LazyModel.LazyModel');
+#class AppModel extends LazyModel
 class AppModel extends Model 
 {
 	public $recursive = -1;
