@@ -1,13 +1,26 @@
+# Enable ETag
+FileETag MTime Size
+
+# Define encoding for utf8
+AddDefaultCharset utf-8
+
+# Compression for apache2
+AddOutputFilterByType DEFLATE text/html text/plain text/css text/xml application/x-javascript text/javascript application/javascript application/json
+
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+
 <IfModule mod_rewrite.c>
-	RewriteEngine on
-	RewriteBase /tremendao	
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule    ^$ app/webroot/    [L]
-	RewriteCond %{REQUEST_FILENAME} !-d
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule    (.*) app/webroot/$1 [L]
-	#RewriteRule    ^$ app/webroot/    [L]
-	#RewriteRule    (.*) app/webroot/$1 [L]
+   RewriteEngine on
+   RewriteBase /Cake-boilerplate/site/
+   RewriteRule    ^$ app/webroot/    [L]
+   RewriteRule    (.*) app/webroot/$1 [L]
 </IfModule>
 
+# Enable Expires
+<IfModule mod_headers.c>
+	 <FilesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+	 	Header set Expires "Thu, 15 Apr 2015 20:00:00 GMT"
+	 </FilesMatch>
+</IfModule>

@@ -1,3 +1,11 @@
 2010-08-16 19:16:03 Warning: Warning (2): mysql_connect() [<a href='http://php.net/function.mysql-connect'>function.mysql-connect</a>]: Can't connect to MySQL server on 'localhost' (10061) in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 540]
 2010-08-16 19:16:03 Warning: Warning (2): mysql_select_db(): supplied argument is not a valid MySQL-Link resource in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 546]
 2010-08-16 19:16:03 Warning: Warning (2): mysql_get_server_info(): supplied argument is not a valid MySQL-Link resource in [G:\Dados\Projetos\Sites\Tremendao\site\cake\libs\model\datasources\dbo\dbo_mysql.php, line 554]
+2010-09-08 18:30:50 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_js/ bailing on writing cache file.
+2010-09-08 18:30:53 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_js/ bailing on writing cache file.
+2010-09-08 18:30:57 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_css/ bailing on writing cache file.
+2010-09-08 18:30:57 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_js/ bailing on writing cache file.
+2010-09-08 18:31:01 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_js/ bailing on writing cache file.
+2010-09-08 18:31:09 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_css/ bailing on writing cache file.
+2010-09-08 18:31:59 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_js/ bailing on writing cache file.
+2010-09-08 18:31:59 Error: Cannot write to /Applications/MAMP/htdocs/Cake-boilerplate/site/app/webroot/cache_css/ bailing on writing cache file.

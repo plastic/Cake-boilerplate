@@ -1,7 +1,9 @@
 <?php
+
 # To fast
-#App::import('Lib', 'LazyModel.LazyModel');
-#class AppModel extends LazyModel
+# App::import('Lib', 'LazyModel.LazyModel');
+# class AppModel extends LazyModel
+
 class AppModel extends Model 
 {
 	public $recursive = -1;
@@ -13,10 +15,15 @@ class AppModel extends Model
 
 	public function __construct($id = false, $table = null, $ds = null) 
 	{
+		if ( preg_match('/^(localhost)$/', $_SERVER['HTTP_HOST']) ) :
+			$this->useDbConfig = "production";
+		endif;
+		
+		# $this->__configureDoctrine(); Apenas com Doctrine
 		parent::__construct($id, $table, $ds);
-		#$this->__configureDoctrine();
 	}
-
+	
+	/*
 	public function __configureDoctrine() 
 	{
 		App::import('vendor', 'doctrine', array('file' => 'doctrine' . DS . 'lib' . DS . 'Doctrine.php'));
@@ -37,12 +44,6 @@ class AppModel extends Model
 		$dbh = new PDO($doctrineDsc, $user, $passwd);
 		$this->doctrineConn = Doctrine_Manager::connection($dbh);
 	}
-	
-	// public function __construct($id = false, $table = null, $ds = null) {
-	// 	if (preg_match('/^(www|homer)$/', $_SERVER['HTTP_HOST']))
-	// 		$this->useDbConfig = "production";
-	// 	
-	// 	parent::__construct($id, $table, $ds);
-	// }
+	*/
 }
 ?>
