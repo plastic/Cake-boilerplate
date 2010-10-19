@@ -117,7 +117,7 @@ if (!defined('CONFIGS')) {
 /**
  * Path to the public images directory.
  */
-	define('IMAGES', WWW_ROOT.'imagens'.DS);
+	define('IMAGES', WWW_ROOT.'img'.DS);
 
 /**
  * Path to the console libs direcotry.
@@ -213,7 +213,7 @@ if (!defined('FULL_BASE_URL')) {
  * Web path to the public images directory.
  */
 if (!defined('IMAGES_URL')) {
-	define('IMAGES_URL', 'imagens/');
+	define('IMAGES_URL', 'img/');
 }
 
 /**
