@@ -8,7 +8,8 @@ class AppController extends Controller
 	{
 		$this->Auth->allow('display');
 	}
-	<br>public function _queueEmail($settings, $checkMailing = false) 
+	
+	public function _queueEmail($settings, $checkMailing = false) 
 	{
 		$default = array(
 			'controller' => array(
