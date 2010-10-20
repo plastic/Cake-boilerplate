@@ -6,7 +6,7 @@ class AppController extends Controller
 	
 	public function beforeFilter()
 	{
-		$this->Auth->allow('display');
+		$this->Auth->allow('*');
 	}
 	
 	public function _queueEmail($settings, $checkMailing = false) 
