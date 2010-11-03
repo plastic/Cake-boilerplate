@@ -1,0 +1,12 @@
+._*
+.DS_Store
+.eprj
+Thumbs.db
+/app/config/database.php
+/app/tmp/
+/app/webroot/imagens/imagecache/
+/app/webroot/cache_css/
+/app/webroot/cache_js/
+/cake/
+/tests/
+/vendors/
