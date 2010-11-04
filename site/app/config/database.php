@@ -76,9 +76,9 @@ class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => 'dbmysql',
-		'login' => 'test',
-		'password' => 'test',
+		'host' => '127.0.0.1:8889',
+		'login' => 'root',
+		'password' => 'root',
 		'database' => 'test',
 		'prefix' => '',
 	);
@@ -86,10 +86,10 @@ class DATABASE_CONFIG {
 	var $test = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => 'localhost',
-		'login' => 'user',
-		'password' => 'password',
-		'database' => 'test_database_name',
-		'prefix' => '',
+		'host' => '127.0.0.1:8889',
+		'login' => 'root',
+		'password' => 'root',
+		'database' => 'test',
+		'prefix' => 'test_',
 	);
 }

@@ -15,9 +15,13 @@ class AppModel extends Model
 
 	public function __construct($id = false, $table = null, $ds = null) 
 	{
-		if ( preg_match('/^(localhost)$/', $_SERVER['HTTP_HOST']) ) :
-			$this->useDbConfig = "production";
-		endif;
+		if ( isset($_SERVER['HTTP_HOST']) ) {
+			if ( preg_match('/^(localhost)$/', $_SERVER['HTTP_HOST']) ) :
+				$this->useDbConfig = "default";
+			endif;
+		} else {
+			$this->useDbConfig = "default";
+		}
 		
 		# $this->__configureDoctrine(); Apenas com Doctrine
 		parent::__construct($id, $table, $ds);

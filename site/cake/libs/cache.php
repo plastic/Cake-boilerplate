@@ -561,6 +561,8 @@ class CacheEngine {
  * @access public
  */
 	function init($settings = array()) {
+		ini_set('date.timezone', "America/Sao_Paulo"); 
+		setlocale(LC_ALL, 'ptb', 'pt_BR', 'portuguese-brazil', 'bra', 'brazil', 'pt_BR.utf-8', 'br');
 		$this->settings = array_merge(
 			array('prefix' => 'cake_', 'duration'=> 3600, 'probability'=> 100),
 			$this->settings,
