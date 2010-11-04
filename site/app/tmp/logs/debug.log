@@ -1,0 +1,2 @@
+2010-11-04 12:33:25 Notice: Notice (8): Use of undefined constant CURRENT_VIEW - assumed 'CURRENT_VIEW' in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/views/elements/footer.ctp, line 6]
+2010-11-04 12:33:25 Notice: Notice (8): Use of undefined constant CURRENT_VIEW - assumed 'CURRENT_VIEW' in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/views/elements/footer.ctp, line 30]

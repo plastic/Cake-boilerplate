@@ -2,10 +2,13 @@
 class UsersController extends AppController {
 
 	public $name = 'Users';
+	public $components = array('Mobiledetect');
 	
-	public function beforeFilter() 
+	public function beforeFilter()
 	{
 		$this->Auth->allow('login', 'logout');
+		$this->Mobiledetect->startup($this);
+		$this->Mobiledetect->detect();
 	} 
 	
 	public function login() {}
