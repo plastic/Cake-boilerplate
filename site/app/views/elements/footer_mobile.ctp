@@ -12,20 +12,14 @@ $jsDefault = array(
 	'mobile'
 	);
 
-#echo $html->script($jsDefault);
-foreach($jsDefault as $js)
-	$assetCompress->script($js);
+echo $html->script($jsDefault);
 ?>
 
 <?php 
 if (isset($this->requestJs)) :
-	foreach ($this->requestJs as $jsPath) :
-		$assetCompress->script($jsPath);
-	endforeach;
+	echo $html->script($this->requestJs);
 endif;
-#echo $html->script($this->requestJs);
 
 if (file_exists(JS . CURRENT_VIEW . '.js'))
-	$assetCompress->script(CURRENT_VIEW);
-#echo $html->script(CURRENT_VIEW);
+	echo $html->script(CURRENT_VIEW);
 ?>

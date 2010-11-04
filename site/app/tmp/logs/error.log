@@ -46,3 +46,81 @@ Aco: Groups/view in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/c
 2010-11-04 12:19:14 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Cake-boilerplate/site/cake/basics.php:110) in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/controller.php, line 746]
 2010-11-04 12:20:57 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Cake-boilerplate/site/cake/basics.php:110) in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/controller.php, line 746]
 2010-11-04 12:33:16 Warning: Warning (2): Cannot modify header information - headers already sent by (output started at /Applications/MAMP/htdocs/Cake-boilerplate/site/cake/basics.php:110) in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/controller.php, line 746]
+2010-11-04 14:14:33 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 3
+            [username] => client
+            [group_id] => 3
+        )
+
+)
+
+Aco: Groups/index in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]
+2010-11-04 15:04:42 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 1
+            [username] => plastic
+            [group_id] => 1
+        )
+
+)
+
+Aco: Groups/index in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]
+2010-11-04 15:06:34 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [username] => mkt
+            [group_id] => 2
+        )
+
+)
+
+Aco: Groups/index in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]
+2010-11-04 15:06:37 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [username] => mkt
+            [group_id] => 2
+        )
+
+)
+
+Aco: Groups/index in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]
+2010-11-04 15:06:37 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [username] => mkt
+            [group_id] => 2
+        )
+
+)
+
+Aco: Groups/index in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]
+2010-11-04 15:19:34 Warning: Warning (512): DbAcl::check() - Failed ARO/ACO node lookup in permissions check.  Node references:
+Aro: Array
+(
+    [User] => Array
+        (
+            [id] => 2
+            [username] => mkt
+            [group_id] => 2
+        )
+
+)
+
+Aco: Groups/view in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/acl.php, line 273]

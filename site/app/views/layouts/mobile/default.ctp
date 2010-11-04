@@ -1,40 +1,37 @@
 <!doctype html>
 <html lang="pt-br" class="no-js">
 <head>
-  <meta charset="utf-8">
-
-	<!--[if IE]>
-		<?php echo $this->Html->script('html5/html5'); ?>
-	<![endif]-->
-
+	<meta charset="utf-8">
+	
 	<title><?php echo isset($this->title) ? $this->title : ""; ?></title>
 	
 	<meta name="description" content="<?php echo isset($this->pageDescription) ? $this->pageDescription : ""; ?>" />
 	<meta name="author" content="Mkt Virtual - Interactive Marketing" />
 	<meta name="keywords" content="<?php echo isset($this->pageKeywords) ? $this->pageKeywords : ""; ?>" />
+	
 	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 	<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 	
 	<?php echo $this->element('header_mobile'); ?>
 </head>
 
-<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
-<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
-<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
-<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+<body>
 
-	<div id="container">
-		<header></header>
+	<div id="container" data-role="page" data-theme="b">
 		
-		<div id="main">
+		<div data-role="header">
+			<h2>CakePHP - Painel de Controle</h2>
+		</div>
+		
+		<div id="main" data-role="content">
 			<?php echo $content_for_layout ?>
 		</div>
 		
-		<footer></footer>
-	</div> <!-- end of #container -->
-
+		<div data-role="footer">
+			<h3>MKT Virtual</h3>
+		</div>
+	</div>
+	
 <?php 
 echo $this->element('footer_mobile');
 echo $assetCompress->includeAssets();

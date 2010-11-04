@@ -11,10 +11,10 @@ class MobiledetectComponent extends Object
 	
 	public function detect()
 	{
-		App::import( 'Vendor', 'Mobi', array( 'file' => 'Mobi/Mtld/DA/Api.php'));
+		App::import('Vendor', 'Mobi', array( 'file' => 'Mobi/Mtld/DA/Api.php'));
 		
 		$tree = Mobi_Mtld_DA_Api::getTreeFromFile(WWW_ROOT . 'json' . DS . 'Sample.json');
-		$properties = Mobi_Mtld_DA_Api::getProperties($tree, 'NOKIAN95');  // $tree, $_SERVER['HTTP_USER_AGENT']
+		$properties = Mobi_Mtld_DA_Api::getProperties($tree, $_SERVER['HTTP_USER_AGENT']);
 		
 		$mobileDevice = $properties['mobileDevice'];
 		
@@ -32,10 +32,9 @@ class MobiledetectComponent extends Object
 			$w_height = $properties['usableDisplayHeight'];
 			$model = $properties['model'];
 			$vendor = $properties['vendor'];
-			//$xhtmlBasic10 = $properties['markup.xhtmlBasic10'];
 			$uri_tel = $properties['uriSchemeTel'];
 			$this->isMobile = true;
-			//$this->setMobile();
+			$this->controller->view = 'Theme';
 			$this->controller->theme = 'mobile';
 			$this->controller->layoutPath = 'mobile';
 		}

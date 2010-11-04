@@ -1,6 +1,6 @@
 <div class="users index">
 	<h2><?php __('Users');?></h2>
-	<table cellpadding="0" cellspacing="0">
+	<table cellpadding="0" cellspacing="0" data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
 	<tr>
 			<th><?php echo $this->Paginator->sort('id');?></th>
 			<th><?php echo $this->Paginator->sort('username');?></th>

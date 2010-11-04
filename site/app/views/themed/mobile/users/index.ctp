@@ -1,4 +1,3 @@
-<h2>Mobile</h2>
 <div class="users index">
 	<h2><?php __('Users');?></h2>
 	<table cellpadding="0" cellspacing="0">
@@ -47,8 +46,8 @@
 	</div>
 </div>
 <div class="actions">
-	<h3><?php __('Actions'); ?></h3>
-	<ul>
+	<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+		<li data-role="list-divider"><?php __('Actions'); ?></li>
 		<li><?php echo $this->Html->link(__('New User', true), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Groups', true), array('controller' => 'groups', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New Group', true), array('controller' => 'groups', 'action' => 'add')); ?> </li>
