@@ -28,6 +28,7 @@
  */
 
 	Router::parseExtensions('xml');
+   
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's urls.

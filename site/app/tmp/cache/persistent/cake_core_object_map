@@ -1,2 +1,2 @@
-1288965230
-a:1:{s:6:"plugin";a:8:{i:0;s:9:"AclPlugin";i:1;s:13:"AssetCompress";i:2;s:10:"Migrations";i:3;s:10:"NamedScope";i:4;s:11:"ProgressBar";i:5;s:5:"Queue";i:6;s:7:"Sitemap";i:7;s:4:"Tags";}}
+1288977471
+a:2:{s:6:"plugin";a:11:{i:0;s:3:"Acl";i:1;s:13:"AssetCompress";i:2;s:8:"DebugKit";i:3;s:5:"Fatty";i:4;s:10:"Migrations";i:5;s:10:"NamedScope";i:6;s:2:"Po";i:7;s:11:"ProgressBar";i:8;s:5:"Queue";i:9;s:7:"Sitemap";i:10;s:4:"Tags";}s:5:"model";a:5:{i:0;s:5:"Group";i:1;s:4:"Note";i:2;s:7:"Noticia";i:3;s:4:"User";i:4;s:7:"Usuario";}}

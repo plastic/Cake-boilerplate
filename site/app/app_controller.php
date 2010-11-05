@@ -2,15 +2,18 @@
 class AppController extends Controller 
 {
 	public $helpers = array('Html', 'Form', 'Javascript', 'Text', 'Session', 'Image', 'Ajax', 'AssetCompress.AssetCompress');
-	public $components = array('Acl', 'Auth', 'RequestHandler', 'Email', 'Session', 'Cookie');
+	public $components = array('Auth', 'RequestHandler', 'Email', 'Session', 'Cookie', 'DebugKit.Toolbar', 'Fatty.Git');
+	#public $components = array('Acl');
 	
 	public function beforeFilter()
 	{
 		#$this->Auth->allow('*');
+		/*
 		$this->Auth->authorize = 'actions';
 		$this->Auth->loginAction = array('controller' => 'users', 'action' => 'login');
 		$this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
 		$this->Auth->loginRedirect = array('controller' => 'notes', 'action' => 'index');
+		*/
 	}
 	
 	public function _queueEmail($settings, $checkMailing = false) 

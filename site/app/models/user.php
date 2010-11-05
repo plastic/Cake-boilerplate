@@ -58,6 +58,11 @@ class User extends AppModel
 			return array('model' => 'Group', 'foreign_key' => $data['User']['group_id']);
 		}
 	}
-    
+	
+	public function bindNode($user) 
+	{
+		return array('Group' => array('id' => $user['User']['group_id']));
+	}
+	
 }
 ?>
