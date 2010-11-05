@@ -10,5 +10,7 @@ $map = array(
 		'acl2' => 'M4cd2a5e22058405ebf0905cd2622a19c'),
 	5 => array(
 		'aclfull' => 'M4cd2ad129e144e7a95300d702622a19c'),
+	6 => array(
+		'tags' => 'M4cd320d545f84ec8b66086942622a19c'),
 );
 ?>

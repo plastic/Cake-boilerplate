@@ -17,6 +17,20 @@
 			&nbsp;
 		</dd>
 	</dl>
+	
+	<?php /*
+	<ul id="tagcloud">
+		<?php 
+			echo $this->TagCloud->display($tags, array(
+				'before' => '<li size="%size%" class="tag">',
+				'after' => '</li>',
+				'url' => array('plugin' => 'tags', 'controller' => 'tags', 'action' => 'view'),
+				'named' => false
+			));
+		?>
+		</ul>
+	*/ ?>
+	
 </div>
 <div class="actions">
 	<h3><?php __('Actions'); ?></h3>

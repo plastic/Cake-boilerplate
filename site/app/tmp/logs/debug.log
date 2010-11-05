@@ -26,3 +26,7 @@
 2010-11-04 15:20:20 Notice: Notice (8): Undefined index:  Group in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/views/users/view.ctp, line 21]
 2010-11-04 15:20:23 Notice: Notice (8): Undefined index:  Group in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/views/users/view.ctp, line 21]
 2010-11-04 15:20:23 Notice: Notice (8): Undefined index:  Group in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/views/users/view.ctp, line 21]
+2010-11-04 19:20:03 Notice: Notice (8): Undefined property: AuthComponent::$Acl in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/auth.php, line 527]
+2010-11-04 19:30:04 Notice: Notice (8): Undefined property: NotesController::$Tagged in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/controllers/notes_controller.php, line 26]
+2010-11-04 19:36:25 Notice: Notice (8): Undefined property: NotesController::$Tagged in [/Applications/MAMP/htdocs/Cake-boilerplate/site/app/controllers/notes_controller.php, line 27]
+2010-11-05 11:50:30 Notice: Notice (8): Undefined property: AuthComponent::$Acl in [/Applications/MAMP/htdocs/Cake-boilerplate/site/cake/libs/controller/components/auth.php, line 527]

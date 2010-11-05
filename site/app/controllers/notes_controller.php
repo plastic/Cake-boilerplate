@@ -2,6 +2,7 @@
 class NotesController extends AppController {
 
 	public $name = 'Notes';
+	#public $helpers = array('Tags.TagCloud');
 	
 	public function beforeFilter() 
 	{
@@ -21,6 +22,11 @@ class NotesController extends AppController {
 			$this->Session->setFlash(__('Invalid note', true));
 			$this->redirect(array('action' => 'index'));
 		}
+		
+		#$this->loadModel('Tags.Tagged');
+		#$this->Note->Tagged->recursive = 2;
+		
+		#$this->set('tags', $this->Note->Tagged->find('cloud', array('limit' => 10)));
 		$this->set('note', $this->Note->read(null, $id));
 	}
 	
