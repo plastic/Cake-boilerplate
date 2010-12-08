@@ -10,3 +10,11 @@ Thumbs.db
 /cake/
 /tests/
 /vendors/
+/site/app/config/database.php
+/site/app/tmp/
+/site/app/webroot/imagens/imagecache/
+/site/app/webroot/cache_css/
+/site/app/webroot/cache_js/
+/site/cake/
+/site/tests/
+/site/vendors/
