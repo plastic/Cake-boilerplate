@@ -4,24 +4,8 @@ if ($this->params['action'] != 'display')
 else
 	define('CURRENT_VIEW', $this->params['controller'] . '/' . $this->params['pass'][0]);
 
-if (file_exists(WWW_ROOT . CSS_URL . CURRENT_VIEW . '.css')) 
-	$assetCompress->css(CURRENT_VIEW);
-	#echo $html->css(CURRENT_VIEW);
-?>
-
-<!-- <link rel="stylesheet" href="<?php echo CSS_URL . CURRENT_VIEW . '.css' ?>" type="text/css" /> -->
-
-<?php
-#echo $html->css('default');
-$assetCompress->css('default');
-
-# CSS PARA MOBILE
-# echo $html->css('handheld', null, array('media'=>'handheld'));
-
-if (isset($this->requestCss)) :
-	foreach ($this->requestCss as $jsPath) :
-		$assetCompress->css($jsPath);
-	endforeach;
+if (!isset($this->requestCss)) :
+	$this->requestCss = array();
 endif;
 
 if (isset($this->setMeta))
@@ -31,3 +15,6 @@ if (isset($this->setMeta))
 		echo '<meta name="' . $meta['name'] . '" content="' . $meta['content'] . '" />';
 	}
 }
+
+echo $this->ScriptCombiner->css(array_merge(array('default'), $this->requestCss, array(CURRENT_VIEW)));
+?>

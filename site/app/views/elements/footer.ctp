@@ -5,33 +5,15 @@ echo $html->scriptBlock('
 	SUBSECTION = "' . (isset($this->subSection) ? $this->subSection : '') . '";
 	CURRENT_VIEW = "' . CURRENT_VIEW . '"
 ');
-
 $jsDefault = array(
-	'jquery-1.4.2.min',
+	'jquery-1.4.4.min',
 	'plugins/ba-debug.min',
-	'swfobject/swfobject',
-	'plugins/jquery.easing.1.3.js',
 	'default'
-	);
-
-#echo $html->script($jsDefault);
-foreach($jsDefault as $js)
-	$assetCompress->script($js);
-?>
-
-<?php 
-if (isset($this->requestJs)) :
-	foreach ($this->requestJs as $jsPath) :
-		$assetCompress->script($jsPath);
-	endforeach;
+);
+if (!isset($this->requestJs)) :
+	$this->requestJs = array();
 endif;
-#echo $html->script($this->requestJs);
-
-if (file_exists(JS . CURRENT_VIEW . '.js'))
-	$assetCompress->script(CURRENT_VIEW);
-#echo $html->script(CURRENT_VIEW);
 ?>
-
 <?php #PNGS FIX IN IE ?>
 <!--[if lt IE 7 ]>
 	<?php echo $this->Html->script('plugins/dd_belatedpng'); ?>
@@ -39,3 +21,4 @@ if (file_exists(JS . CURRENT_VIEW . '.js'))
 		DD_belatedPNG.fix('img');
 	</script>
 <![endif]-->
+<?php echo $this->ScriptCombiner->js(array_merge($jsDefault, $this->requestJs, array(CURRENT_VIEW))); ?>
