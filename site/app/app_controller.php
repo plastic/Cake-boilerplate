@@ -2,8 +2,7 @@
 class AppController extends Controller 
 {
 	public $helpers = array('Html', 'Form', 'Javascript', 'Text', 'Session', 'Image', 'Ajax', 'ScriptCombiner');
-	public $components = array('Auth', 'RequestHandler', 'Email', 'Session', 'Cookie', 'Fatty.Git');
-	#public $components = array('Acl');
+	public $components = array('Auth', 'RequestHandler', 'Email', 'Session', 'Cookie');
 	
 	public function beforeFilter()
 	{
@@ -14,12 +13,8 @@ class AppController extends Controller
 		$this->Auth->logoutRedirect = array('controller' => 'users', 'action' => 'login');
 		$this->Auth->loginRedirect = array('controller' => 'notes', 'action' => 'index');
 		*/
-		if ( isset($this->params['url']['mobile']) ) 
-		{
-			setcookie('site', 'default', strtotime('-1 day'));
-		}
 	}
-	
+	/*
 	public function beforerender()
 	{
 		if ( isset($this->params['url']['site']) ) 
@@ -36,6 +31,7 @@ class AppController extends Controller
 			}
 		}
 	}
+	*/
 	
 	public function _queueEmail($settings, $checkMailing = false) 
 	{

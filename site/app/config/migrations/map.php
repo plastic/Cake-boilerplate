@@ -14,5 +14,7 @@ $map = array(
 		'tags' => 'M4cd320d545f84ec8b66086942622a19c'),
 	7 => array(
 		'git' => 'M4cd43c35dadc4631859b2d3f2622a19c'),
+	8 => array(
+		'migracao_all' => 'M4d011a11b4084de88e1c5c252622a19c'),
 );
 ?>

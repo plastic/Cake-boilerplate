@@ -76,20 +76,20 @@ class DATABASE_CONFIG {
 	var $default = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => '127.0.0.1:8889',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'test',
+		'host' => '',
+		'login' => '',
+		'password' => '',
+		'database' => '',
 		'prefix' => '',
 	);
 
 	var $test = array(
 		'driver' => 'mysql',
 		'persistent' => false,
-		'host' => '127.0.0.1:8889',
-		'login' => 'root',
-		'password' => 'root',
-		'database' => 'test',
+		'host' => '',
+		'login' => '',
+		'password' => '',
+		'database' => '',
 		'prefix' => 'test_',
 	);
 }
